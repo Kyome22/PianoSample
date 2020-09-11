@@ -13,7 +13,7 @@ class SoundModel {
 
     var cancellables = Set<AnyCancellable>()
     let subject = PassthroughSubject<KeyInfo, Never>()
-    let sineWave = SineWave()
+    let piano = PianoSound()
 
     init() {
         subject.sink { (info) in
@@ -24,9 +24,9 @@ class SoundModel {
 
     func called(keyInfo: KeyInfo) {
         if keyInfo.isPressed {
-            sineWave.play(keyInfo: keyInfo)
+            piano.play(keyInfo: keyInfo)
         } else {
-            sineWave.stop(keyInfo: keyInfo)
+            piano.stop(keyInfo: keyInfo)
         }
 
         Swift.print(keyInfo.description)

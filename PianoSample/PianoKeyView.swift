@@ -17,13 +17,19 @@ struct PianoKeyView: View {
         self.model = model
         _location = location
     }
-    
+
     var body: some View {
         let size = getSize()
         return GeometryReader { geometry in
             self.makeShape(geometry: geometry)
         }
         .frame(width: size.width, height: size.height)
+    }
+
+    private func getSize() -> CGSize {
+        let w: CGFloat = model.color == .white ? 40 : 24
+        let h: CGFloat = model.color == .white ? 200 : 119
+        return CGSize(width: w, height: h)
     }
 
     private func hit(geometry: GeometryProxy) -> Bool {
@@ -34,24 +40,10 @@ struct PianoKeyView: View {
                                      y: location.y - frame.origin.y))
     }
 
-    private func getSize() -> CGSize {
-        let w: CGFloat = model.color == .white ? 40 : 24
-        let h: CGFloat = model.color == .white ? 200 : 119
-        return CGSize(width: w, height: h)
-    }
-
     private func makeShape(geometry: GeometryProxy) -> some View {
         self.model.isHit = hit(geometry: geometry)
         return KeyShape(radius: 8, type: model.type)
-            .fill(getColor())
-    }
-
-    private func getColor() -> Color {
-        switch model.color {
-        case .white: return model.isHit ? Color(white: 0.8) : .white
-        case .black: return model.isHit ? Color(white: 0.2) : .black
-        case .clear: return .clear
-        }
+            .fill(model.getColor())
     }
 
     func onEvent(handler: @escaping ((KeyInfo) -> Void)) -> some View {

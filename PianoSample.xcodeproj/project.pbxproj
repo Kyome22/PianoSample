@@ -16,7 +16,7 @@
 		1CE08C722509C72A00466D23 /* KeyShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE08C702509BA5400466D23 /* KeyShape.swift */; };
 		1CE08C782509F8FB00466D23 /* PianoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE08C772509F8FB00466D23 /* PianoModel.swift */; };
 		1CE08C7A250B0B7500466D23 /* PianoKeyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE08C79250B0B7500466D23 /* PianoKeyModel.swift */; };
-		1CE08C7C250B595700466D23 /* SineWave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE08C7B250B595700466D23 /* SineWave.swift */; };
+		1CE08C7C250B595700466D23 /* PianoSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE08C7B250B595700466D23 /* PianoSound.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +32,7 @@
 		1CE08C702509BA5400466D23 /* KeyShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyShape.swift; sourceTree = "<group>"; };
 		1CE08C772509F8FB00466D23 /* PianoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoModel.swift; sourceTree = "<group>"; };
 		1CE08C79250B0B7500466D23 /* PianoKeyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoKeyModel.swift; sourceTree = "<group>"; };
-		1CE08C7B250B595700466D23 /* SineWave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SineWave.swift; sourceTree = "<group>"; };
+		1CE08C7B250B595700466D23 /* PianoSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoSound.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				1CCB386D25093931000F5D58 /* AppDelegate.swift */,
-				1CE08C7B250B595700466D23 /* SineWave.swift */,
+				1CE08C7B250B595700466D23 /* PianoSound.swift */,
 				1CE08C772509F8FB00466D23 /* PianoModel.swift */,
 				1CCB386F25093931000F5D58 /* ContentView.swift */,
 				1CE08C79250B0B7500466D23 /* PianoKeyModel.swift */,
@@ -161,7 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CCB387025093931000F5D58 /* ContentView.swift in Sources */,
-				1CE08C7C250B595700466D23 /* SineWave.swift in Sources */,
+				1CE08C7C250B595700466D23 /* PianoSound.swift in Sources */,
 				1CE08C782509F8FB00466D23 /* PianoModel.swift in Sources */,
 				1CCB386E25093931000F5D58 /* AppDelegate.swift in Sources */,
 				1CE08C7A250B0B7500466D23 /* PianoKeyModel.swift in Sources */,

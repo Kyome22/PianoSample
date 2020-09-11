@@ -6,18 +6,24 @@
 //  Copyright © 2020 Takuto Nakamura. All rights reserved.
 //
 
+import SwiftUI
 import Combine
 
 enum KeyColor {
     case white
     case black
-    case clear
 
     var description: String {
         switch self {
         case .white: return "white"
         case .black: return "black"
-        case .clear: return "clear"
+        }
+    }
+
+    func value(isHit: Bool) -> Color {
+        switch self {
+        case .white: return isHit ? Color(white: 0.8) : .white
+        case .black: return isHit ? Color(white: 0.2) : .black
         }
     }
 }
@@ -79,6 +85,10 @@ class PianoKeyModel: ObservableObject {
 
     private func stop() {
         subject.send(KeyInfo(color: color, type: type, n: n, isPressed: false))
+    }
+
+    func getColor() -> Color {
+        return color.value(isHit: isHit)
     }
 
 }
