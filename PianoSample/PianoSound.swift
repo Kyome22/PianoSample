@@ -35,7 +35,7 @@ class PianoSound {
     }
 
     private func loadSoundFont() {
-        guard let url = Bundle.main.url(forResource: "Ob-3",
+        guard let url = Bundle.main.url(forResource: "emuaps_8mb",
                                         withExtension: "sf2") else { return }
         try? unitSampler.loadSoundBankInstrument(
             at: url, program: 0,
@@ -85,20 +85,20 @@ class PianoSound {
         self.unitSampler.startNote(note, withVelocity: 80, onChannel: 0)
     }
 
-    func fadeOut(note: UInt8, pressure: UInt8 = 80) {
-        if 0 < pressure {
-            self.unitSampler.sendPressure(forKey: note, withValue: pressure - 10, onChannel: 0)
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {
-                self.fadeOut(note: note, pressure: pressure - 10)
-            }
-        } else {
-            self.unitSampler.stopNote(note, onChannel: 0)
-        }
-    }
+//    func fadeOut(note: UInt8, pressure: UInt8 = 80) {
+//        if 0 < pressure {
+//            self.unitSampler.sendPressure(forKey: note, withValue: pressure - 10, onChannel: 0)
+//            DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {
+//                self.fadeOut(note: note, pressure: pressure - 10)
+//            }
+//        } else {
+//            self.unitSampler.stopNote(note, onChannel: 0)
+//        }
+//    }
 
     func stop(keyInfo: KeyInfo) {
         let note = convert(keyInfo: keyInfo)
-        fadeOut(note: note)
+        self.unitSampler.stopNote(note, onChannel: 0)
     }
 
 }

@@ -17,6 +17,7 @@
 		1CE08C782509F8FB00466D23 /* PianoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE08C772509F8FB00466D23 /* PianoModel.swift */; };
 		1CE08C7A250B0B7500466D23 /* PianoKeyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE08C79250B0B7500466D23 /* PianoKeyModel.swift */; };
 		1CE08C7C250B595700466D23 /* PianoSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE08C7B250B595700466D23 /* PianoSound.swift */; };
+		1CE08C84250C10B400466D23 /* emuaps_8mb.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = 1CE08C83250C10B400466D23 /* emuaps_8mb.sf2 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		1CE08C772509F8FB00466D23 /* PianoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoModel.swift; sourceTree = "<group>"; };
 		1CE08C79250B0B7500466D23 /* PianoKeyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoKeyModel.swift; sourceTree = "<group>"; };
 		1CE08C7B250B595700466D23 /* PianoSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoSound.swift; sourceTree = "<group>"; };
+		1CE08C83250C10B400466D23 /* emuaps_8mb.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = emuaps_8mb.sf2; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 		1CCB386C25093931000F5D58 /* PianoSample */ = {
 			isa = PBXGroup;
 			children = (
+				1CE08C83250C10B400466D23 /* emuaps_8mb.sf2 */,
 				1CCB386D25093931000F5D58 /* AppDelegate.swift */,
 				1CE08C7B250B595700466D23 /* PianoSound.swift */,
 				1CE08C772509F8FB00466D23 /* PianoModel.swift */,
@@ -147,6 +150,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CE08C84250C10B400466D23 /* emuaps_8mb.sf2 in Resources */,
 				1CCB387825093934000F5D58 /* Main.storyboard in Resources */,
 				1CCB387525093934000F5D58 /* Preview Assets.xcassets in Resources */,
 				1CCB387225093934000F5D58 /* Assets.xcassets in Resources */,
