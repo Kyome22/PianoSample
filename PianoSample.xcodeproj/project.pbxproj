@@ -1,0 +1,370 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CCB386E25093931000F5D58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCB386D25093931000F5D58 /* AppDelegate.swift */; };
+		1CCB387025093931000F5D58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCB386F25093931000F5D58 /* ContentView.swift */; };
+		1CCB387225093934000F5D58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CCB387125093934000F5D58 /* Assets.xcassets */; };
+		1CCB387525093934000F5D58 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CCB387425093934000F5D58 /* Preview Assets.xcassets */; };
+		1CCB387825093934000F5D58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CCB387625093934000F5D58 /* Main.storyboard */; };
+		1CCB388125093974000F5D58 /* PianoKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCB388025093974000F5D58 /* PianoKeyView.swift */; };
+		1CE08C722509C72A00466D23 /* KeyShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE08C702509BA5400466D23 /* KeyShape.swift */; };
+		1CE08C782509F8FB00466D23 /* PianoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE08C772509F8FB00466D23 /* PianoModel.swift */; };
+		1CE08C7A250B0B7500466D23 /* PianoKeyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE08C79250B0B7500466D23 /* PianoKeyModel.swift */; };
+		1CE08C7C250B595700466D23 /* SineWave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE08C7B250B595700466D23 /* SineWave.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1CCB386A25093931000F5D58 /* PianoSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PianoSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CCB386D25093931000F5D58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1CCB386F25093931000F5D58 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1CCB387125093934000F5D58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1CCB387425093934000F5D58 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1CCB387725093934000F5D58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1CCB387925093934000F5D58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CCB387A25093934000F5D58 /* PianoSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PianoSample.entitlements; sourceTree = "<group>"; };
+		1CCB388025093974000F5D58 /* PianoKeyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoKeyView.swift; sourceTree = "<group>"; };
+		1CE08C702509BA5400466D23 /* KeyShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyShape.swift; sourceTree = "<group>"; };
+		1CE08C772509F8FB00466D23 /* PianoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoModel.swift; sourceTree = "<group>"; };
+		1CE08C79250B0B7500466D23 /* PianoKeyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoKeyModel.swift; sourceTree = "<group>"; };
+		1CE08C7B250B595700466D23 /* SineWave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SineWave.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1CCB386725093931000F5D58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CCB386125093931000F5D58 = {
+			isa = PBXGroup;
+			children = (
+				1CCB386C25093931000F5D58 /* PianoSample */,
+				1CCB386B25093931000F5D58 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1CCB386B25093931000F5D58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1CCB386A25093931000F5D58 /* PianoSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1CCB386C25093931000F5D58 /* PianoSample */ = {
+			isa = PBXGroup;
+			children = (
+				1CCB386D25093931000F5D58 /* AppDelegate.swift */,
+				1CE08C7B250B595700466D23 /* SineWave.swift */,
+				1CE08C772509F8FB00466D23 /* PianoModel.swift */,
+				1CCB386F25093931000F5D58 /* ContentView.swift */,
+				1CE08C79250B0B7500466D23 /* PianoKeyModel.swift */,
+				1CCB388025093974000F5D58 /* PianoKeyView.swift */,
+				1CE08C702509BA5400466D23 /* KeyShape.swift */,
+				1CCB387125093934000F5D58 /* Assets.xcassets */,
+				1CCB387625093934000F5D58 /* Main.storyboard */,
+				1CCB387925093934000F5D58 /* Info.plist */,
+				1CCB387A25093934000F5D58 /* PianoSample.entitlements */,
+				1CCB387325093934000F5D58 /* Preview Content */,
+			);
+			path = PianoSample;
+			sourceTree = "<group>";
+		};
+		1CCB387325093934000F5D58 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1CCB387425093934000F5D58 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1CCB386925093931000F5D58 /* PianoSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CCB387D25093934000F5D58 /* Build configuration list for PBXNativeTarget "PianoSample" */;
+			buildPhases = (
+				1CCB386625093931000F5D58 /* Sources */,
+				1CCB386725093931000F5D58 /* Frameworks */,
+				1CCB386825093931000F5D58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PianoSample;
+			productName = PianoSample;
+			productReference = 1CCB386A25093931000F5D58 /* PianoSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1CCB386225093931000F5D58 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = "Takuto Nakamura";
+				TargetAttributes = {
+					1CCB386925093931000F5D58 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+				};
+			};
+			buildConfigurationList = 1CCB386525093931000F5D58 /* Build configuration list for PBXProject "PianoSample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1CCB386125093931000F5D58;
+			productRefGroup = 1CCB386B25093931000F5D58 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1CCB386925093931000F5D58 /* PianoSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1CCB386825093931000F5D58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CCB387825093934000F5D58 /* Main.storyboard in Resources */,
+				1CCB387525093934000F5D58 /* Preview Assets.xcassets in Resources */,
+				1CCB387225093934000F5D58 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CCB386625093931000F5D58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CCB387025093931000F5D58 /* ContentView.swift in Sources */,
+				1CE08C7C250B595700466D23 /* SineWave.swift in Sources */,
+				1CE08C782509F8FB00466D23 /* PianoModel.swift in Sources */,
+				1CCB386E25093931000F5D58 /* AppDelegate.swift in Sources */,
+				1CE08C7A250B0B7500466D23 /* PianoKeyModel.swift in Sources */,
+				1CCB388125093974000F5D58 /* PianoKeyView.swift in Sources */,
+				1CE08C722509C72A00466D23 /* KeyShape.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1CCB387625093934000F5D58 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CCB387725093934000F5D58 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1CCB387B25093934000F5D58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1CCB387C25093934000F5D58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		1CCB387E25093934000F5D58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PianoSample/PianoSample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"PianoSample/Preview Content\"";
+				DEVELOPMENT_TEAM = VJ5N2X84K8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = PianoSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyome.PianoSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1CCB387F25093934000F5D58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PianoSample/PianoSample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"PianoSample/Preview Content\"";
+				DEVELOPMENT_TEAM = VJ5N2X84K8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = PianoSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kyome.PianoSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CCB386525093931000F5D58 /* Build configuration list for PBXProject "PianoSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CCB387B25093934000F5D58 /* Debug */,
+				1CCB387C25093934000F5D58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CCB387D25093934000F5D58 /* Build configuration list for PBXNativeTarget "PianoSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CCB387E25093934000F5D58 /* Debug */,
+				1CCB387F25093934000F5D58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1CCB386225093931000F5D58 /* Project object */;
+}
